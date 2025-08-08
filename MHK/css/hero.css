@@ -1,2 +1,173 @@
 
-@import url('./mainStyle.css')
+@import url('./mainStyle.css');
+
+:root {
+  --primary-color: #ffdfb9;
+  --secondary-color: #a4193d;
+  --logo-color:#A4193D;
+   --h1-color:#772c40;
+}
+
+.hero {
+      width: 100%;
+      max-width: 1200px;
+      padding: 30px;
+      
+      border-radius: 20px;
+      
+    }
+    
+    .hero-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .hero-text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 25px;
+      flex: 1;
+      padding-right: 40px;
+    }
+    
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .hero-text h1 {
+      font-size: 3.5rem;
+      color: var(--secondary-color);
+      line-height: 1.1;
+    }
+    
+    .hero-text h3 {
+      font-size: 2rem;
+      color: var(--h1-color);
+    }
+    
+    .hero-text p {
+      font-size: 1.25rem;
+      color: var(--h1-color);
+      max-width: 500px;
+    }
+    
+    .cv-btn {
+      background-color: var(--secondary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 16px;
+      color: var(--primary-color);
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: fit-content;
+    }
+    
+    .cv-btn:hover {
+      background-color: #8d1536;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(164, 25, 61, 0.2);
+    }
+    
+    .download-img {
+      width: 24px;
+      height: 24px;
+      background-color: var(--secondary-color);
+    }
+    
+    .hero-image-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      aspect-ratio: 1/1; /* Maintain square ratio */
+      max-width: 500px; /* Prevent image from growing too large */
+    }
+    
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    
+    /* Mobile Responsive Styles */
+    @media (max-width: 900px) {
+      .hero-text-container {
+        padding-right: 30px;
+      }
+      
+      .hero-text h1 {
+        font-size: 3rem;
+      }
+      
+      .hero-text h3 {
+        font-size: 1.7rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero {
+        padding: 20px;
+      }
+      
+      .hero-container {
+        flex-direction: column;
+        gap: 40px;
+      }
+      
+      .hero-text-container {
+        padding-right: 0;
+        text-align: center;
+        align-items: center;
+      }
+      
+      .hero-text {
+        align-items: center;
+      }
+      
+      .hero-text p {
+        max-width: 100%;
+      }
+      
+      .cv-btn {
+        margin: 0 auto;
+      }
+      
+      .hero-image-container {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .hero {
+        padding: 15px;
+        margin: 10px;
+      }
+      
+      .hero-text h1 {
+        font-size: 2.3rem;
+      }
+      
+      .hero-text h3 {
+        font-size: 1.4rem;
+      }
+      
+      .hero-text p {
+        font-size: 1.1rem;
+      }
+    }
