@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/mainStyle.css" />
     <link rel="stylesheet" type="text/css" href="./css/hero.css" />
+    <link rel="stylesheet" type="text/css" href="./css/about.css" />
+    <link rel="stylesheet" type="text/css" href="./css/skills.css" />
+    <link rel="stylesheet" type="text/css" href="./css/projects.css" />
     <title>Haziq Portfolio</title>
     <!-- Other meta information, links to stylesheets, scripts, etc. -->
   </head>
@@ -49,32 +52,154 @@
           <!-- text goes here -->
           <div class="hero-text">
             <h1>Hello World!</h1>
-            <h3>i'm Muhammad Haziq</h3>
+            <h3>I'm Muhammad Haziq</h3>
             <p>"Self-Taught Web Developer transitioning from F&B Management"</p>
           </div>
           <div>
             <!-- insert download icon -->
             <button class="cv-btn">
               Download CV
-               <img
-          class="download-img"
-          src="./public/assets/download.svg"
-           width="50px"
-          height="30px"
-        />
+              <img
+                class="download-img"
+                src="./public/assets/download.svg"
+                width="50px"
+                height="30px"
+              />
             </button>
           </div>
         </div>
         <div class="hero-image-container">
           <!-- image goes here -->
-         <img src="./public/IMG_20200311_162002.jpg" alt="Example" class="hero-image">
+          <img
+            src="./public/IMG_20200311_162002.jpg"
+            alt="Example"
+            class="hero-image"
+          />
         </div>
       </div>
     </section>
 
     <!-- about  & about modal-->
 
+    <section class="about-me">
+      <div class="about-image-container">
+        <!-- image goes here -->
+        <img
+          src="./public/IMG_20200227_190450.jpg"
+          alt="Example"
+          class="about-image"
+        />
+      </div>
+      <div class="about-text-container">
+        <!-- text goes here -->
+        <h2>
+          "Curiosity sparked it. Passion drives it. Code is the future I'm
+          building."
+        </h2>
+        <p>
+          I come from a background in the food and beverage industry, where I
+          spent over 5 years managing operations, leading teams, and ensuring
+          great customer experiences. During that time, I developed strong
+          communication, problem-solving, and time management skills — all of
+          which I now bring into my journey as a developer.
+          <br />
+          <br />
+          My curiosity about how technology works sparked a desire to explore
+          web development. What started as a side interest quickly grew into a
+          real passion, and I’ve since decided to make a full career transition
+          into tech. I’m excited by the creative and logical challenges that
+          coding brings and enjoy building things that are both useful and
+          meaningful.
+          <br />
+          <br />
+          Currently, I’m focused on learning HTML, CSS, JavaScript, React,
+          Node.js, and MySQL — with more tools and frameworks on the horizon. As
+          a self-taught developer, I’m consistently exploring, experimenting,
+          and pushing myself to grow. I would describe myself as focused,
+          curious, and highly motivated to keep learning and improving every
+          day.
+        </p>
+      </div>
+      <!-- create modal for full paragraph -->
+    </section>
+    <!-- skills related -->
+    <section class="skills">
+      <h1>Skills, Tools & Technologies I’m Exploring</h1>
+      <div class="skills-container">
+        <div class="frontend-container tech">
+          <h3>Frontend</h3>
+          <ul>
+            <li><img src="./public/assets/html.svg" alt="html" /></li>
+            <li><img src="./public/assets/css.svg" alt="css" /></li>
+            <li>
+              <img src="./public/assets/javascript.svg" alt="javascript" />
+            </li>
+            <li>
+              <img src="./public/assets/tailwindcss.svg" alt="tailwindss" />
+            </li>
+            <li><img src="./public/assets/react.svg" alt="react" /></li>
+          </ul>
+        </div>
+
+        <div class="backend-container tech">
+          <h3>Backend</h3>
+          <ul>
+            <li><img src="./public/assets/nodejs.svg" alt="nodejs" /></li>
+            <li><img src="./public/assets/mysql.svg" alt="mysql" /></li>
+            <li><img src="./public/assets/express.svg" alt="express-js" /></li>
+          </ul>
+        </div>
+
+        <div class="exploring-container tech">
+          <h3>Others Tools</h3>
+          <ul>
+            <li><img src="./public/assets/git.svg" alt="git" /></li>
+            <li><img src="./public/assets/github.svg" alt="github" /></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- project & project modal -->
+    <section class="projects" id="projects">
+      <!-- create card and push with append
+        child -->
+
+        <h1 class="project-title">My Projects so far</h1>
+
+      <div class="project-container">
+        <div class="image-project-container">
+          <img src="./public/assets/project/hc-churros.png" class="project-img" />
+        </div>
+        <div class="text-project-container">
+          <h2>HC-CHURROS</h2>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <ul>
+            <li><img src="./public/assets/html.svg" alt="html" /></li>
+            <li><img src="./public/assets/css.svg" alt="css" /></li>
+            <li>
+              <img src="./public/assets/javascript.svg" alt="javascript" />
+            </li>
+            <li>
+              <img src="./public/assets/tailwindcss.svg" alt="tailwindss" />
+            </li>
+            <li><img src="./public/assets/react.svg" alt="react" /></li>
+          </ul>
+          <!-- button to source code -->
+           <button class="project-source-btn">
+            Source Link
+           </button>
+        </div>
+      </div>
+    </section>
 
     <!-- contact & contact modal -->
 

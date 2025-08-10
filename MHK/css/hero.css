@@ -39,18 +39,18 @@
     }
     
     .hero-text h1 {
-      font-size: 3.5rem;
+      font-size: 5rem;
       color: var(--secondary-color);
       line-height: 1.1;
     }
     
     .hero-text h3 {
-      font-size: 2rem;
+      font-size: 3rem;
       color: var(--h1-color);
     }
     
     .hero-text p {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       color: var(--h1-color);
       max-width: 500px;
     }
@@ -81,8 +81,11 @@
     .download-img {
       width: 24px;
       height: 24px;
-      background-color: var(--secondary-color);
+      background-color: transparent;
     }
+
+  
+    
     
     .hero-image-container {
       flex: 1;
@@ -93,7 +96,8 @@
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
       aspect-ratio: 1/1; /* Maintain square ratio */
-      max-width: 500px; /* Prevent image from growing too large */
+      max-width: 400px; /* Prevent image from growing too large */
+      box-shadow: 5px 10px var(--logo-color);
     }
     
     .hero-image {
@@ -101,7 +105,16 @@
       height: 100%;
       object-fit: cover;
       display: block;
+      
     }
+
+    .hero-image:hover {
+     
+      transform: translateY(-3px);
+      transition: all 0.3s ease;
+      box-shadow: 5px 10px var(--logo-color);
+    }
+    
     
     /* Mobile Responsive Styles */
     @media (max-width: 900px) {
@@ -120,7 +133,8 @@
     
     @media (max-width: 768px) {
       .hero {
-        padding: 20px;
+        
+        padding: 40px 20px ;
       }
       
       .hero-container {
@@ -136,6 +150,14 @@
       
       .hero-text {
         align-items: center;
+      }
+
+      .hero-text h1 {
+        font-size: 4rem;
+      }
+      
+      .hero-text h3 {
+        font-size: 2.3rem;
       }
       
       .hero-text p {
@@ -155,16 +177,16 @@
     
     @media (max-width: 480px) {
       .hero {
-        padding: 15px;
+        
         margin: 10px;
       }
       
       .hero-text h1 {
-        font-size: 2.3rem;
+        font-size: 3rem;
       }
       
       .hero-text h3 {
-        font-size: 1.4rem;
+        font-size: 2rem;
       }
       
       .hero-text p {
