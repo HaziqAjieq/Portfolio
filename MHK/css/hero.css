@@ -2,12 +2,10 @@
 @import url('./mainStyle.css');
 
 :root {
-  --primary-color: #ffdfb9;
-  --secondary-color: #a4193d;
-  --logo-color:#A4193D;
-   --h1-color:#772c40;
+  --primary-color: #EAE4D5;
+  --secondary-color: #222831;
+  --logo-color:#000000;
 }
-
 .hero {
       width: 100%;
       max-width: 1200px;
@@ -73,9 +71,9 @@
     }
     
     .cv-btn:hover {
-      background-color: #8d1536;
+      background-color: var(--logo-color);
       transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(164, 25, 61, 0.2);
+      box-shadow: 0 5px 15px rgba(22, 22, 22, 0.2);
     }
     
     .download-img {

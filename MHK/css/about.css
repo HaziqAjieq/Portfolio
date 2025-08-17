@@ -3,16 +3,17 @@
 @import url('./mainStyle.css');
 
 :root {
-  --primary-color: #ffdfb9;
-  --secondary-color: #a4193d;
-  --logo-color:#A4193D;
+  --primary-color: #EAE4D5;
+  --secondary-color: #222831;
+  --logo-color:#000000;
+  --container-color:rgb(230, 227, 227);
 }
 
 .about-me{
  width: 100%;
  max-width: 1200px;
  padding: 40px 20px;
-  background-color: var(--primary-color);      
+  background-color: var(--container-color);      
  border-radius: 20px;
  display: flex;
  flex-direction: row;

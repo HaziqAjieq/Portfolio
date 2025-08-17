@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/about.css" />
     <link rel="stylesheet" type="text/css" href="./css/skills.css" />
     <link rel="stylesheet" type="text/css" href="./css/projects.css" />
+    <link rel="stylesheet" type="text/css" href="./css/contact.css" />
     <title>Haziq Portfolio</title>
     <!-- Other meta information, links to stylesheets, scripts, etc. -->
   </head>
@@ -161,48 +162,79 @@
     </section>
 
     <!-- project & project modal -->
-    <section class="projects" id="projects">
+    <section class="projects" id="">
       <!-- create card and push with append
         child -->
 
-        <h1 class="project-title">My Projects so far</h1>
+      <h1 class="project-title">Featured Projects</h1>
 
-      <div class="project-container">
-        <div class="image-project-container">
-          <img src="./public/assets/project/hc-churros.png" class="project-img" />
-        </div>
-        <div class="text-project-container">
-          <h2>HC-CHURROS</h2>
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
-          </p>
-          <ul>
-            <li><img src="./public/assets/html.svg" alt="html" /></li>
-            <li><img src="./public/assets/css.svg" alt="css" /></li>
-            <li>
-              <img src="./public/assets/javascript.svg" alt="javascript" />
-            </li>
-            <li>
-              <img src="./public/assets/tailwindcss.svg" alt="tailwindss" />
-            </li>
-            <li><img src="./public/assets/react.svg" alt="react" /></li>
-          </ul>
-          <!-- button to source code -->
-           <button class="project-source-btn">
-            Source Link
-           </button>
-        </div>
+      <div class="project-container" id="projects-container">
+        
+        
       </div>
+      <div class="controls">
+        <button class="seeMoreBtn" id="seeMoreBtn">
+        See More</button>
+      </div>
+      
     </section>
 
-    <!-- contact & contact modal -->
 
+    <!-- contact & contact modal -->
+    <section class="contact-container">
+      <div class="contact-info">
+         <h1>
+      Contact Me.
+     </h1>
+
+     <p>
+      I am currently seeking employment, and i would appreciate it if you could contact me with any available job opportunities.
+     </p>
+      
+      <ul class="social-container">
+        <li>
+          <a href="https://github.com/HaziqAjieq">
+          <img src="./public/assets/github.svg"></a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/muhammad-haziq-a40b6b1ba/">
+            <img src="./public/assets/linkedin.svg"></a></li>
+      </ul>
+      </div>
+      
+      <div class="form-container">
+
+      
+       <form action="https://formsubmit.co/muhd.haziq.khair@gmail.com" method="POST" class="contact-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group input-row">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Phone Number">
+            </div>
+            
+            <div class="form-group">
+                <textarea name="comment" placeholder="Leave a message..." required></textarea>
+            </div>
+            
+            <button type="submit">
+                <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            
+        </form>
+    
+     <!-- social media / github account -->
+      
+      </div>
+    </section>
+     <footer>
+        <p>© 2023 Muhammad Haziq | Self-Taught Web Developer</p>
+        <p>Curiosity sparked it. Passion drives it. Code is the future I'm building.</p>
+    </footer>
+
+    
+    <script src="./public/contexts/cardData.js" type="module"></script>
     <script src="./js/index.js" type="module"></script>
     <script src="./js/navbar.js" type="module"></script>
   </body>
