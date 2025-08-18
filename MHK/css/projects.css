@@ -74,7 +74,8 @@
   color: var(--h1-color);
 }
 
-.project-source-btn {
+.project-source-btn  a{
+  text-decoration: none;
   background-color: var(--secondary-color);
   display: flex;
   align-items: center;
@@ -91,7 +92,7 @@
   width: fit-content;
 }
 
-.project-source-btn:hover {
+.project-source-btn:hover a {
   background-color: var(--logo-color);
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(22, 22, 22, 0.2);

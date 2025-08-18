@@ -35,10 +35,10 @@
       </button>
       <nav class="navbar">
         <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Project</a></li>
+          <li><a href="#hero">About</a></li>
+          <li><a href="#projects">Project</a></li>
           <li><a href="">Services</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -47,7 +47,7 @@
       <h1>MHK</h1>
     </div>
     <!-- hero section -->
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero-container">
         <div class="hero-text-container">
           <!-- text goes here -->
@@ -58,7 +58,12 @@
           </div>
           <div>
             <!-- insert download icon -->
-            <button class="cv-btn">
+
+            <a
+              href="./public/MUHAMMAD_HAZIQ_CV.pdf"
+              download="MUHAMMAD_HAZIQ_CV.pdf"
+              class="cv-btn"
+            >
               Download CV
               <img
                 class="download-img"
@@ -66,7 +71,7 @@
                 width="50px"
                 height="30px"
               />
-            </button>
+            </a>
           </div>
         </div>
         <div class="hero-image-container">
@@ -82,7 +87,7 @@
 
     <!-- about  & about modal-->
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
       <div class="about-image-container">
         <!-- image goes here -->
         <img
@@ -124,7 +129,7 @@
       <!-- create modal for full paragraph -->
     </section>
     <!-- skills related -->
-    <section class="skills">
+    <section class="skills" id="skills">
       <h1>Skills, Tools & Technologies I’m Exploring</h1>
       <div class="skills-container">
         <div class="frontend-container tech">
@@ -162,78 +167,86 @@
     </section>
 
     <!-- project & project modal -->
-    <section class="projects" id="">
+    <section class="projects" id="projects">
       <!-- create card and push with append
         child -->
 
       <h1 class="project-title">Featured Projects</h1>
 
-      <div class="project-container" id="projects-container">
-        
-        
-      </div>
+      <div class="project-container" id="projects-container"></div>
       <div class="controls">
-        <button class="seeMoreBtn" id="seeMoreBtn">
-        See More</button>
+        <button class="seeMoreBtn" id="seeMoreBtn">See More</button>
       </div>
-      
     </section>
-
 
     <!-- contact & contact modal -->
-    <section class="contact-container">
+    <section class="contact-container" id="contact">
       <div class="contact-info">
-         <h1>
-      Contact Me.
-     </h1>
+        <h1>Contact Me.</h1>
 
-     <p>
-      I am currently seeking employment, and i would appreciate it if you could contact me with any available job opportunities.
-     </p>
-      
-      <ul class="social-container">
-        <li>
-          <a href="https://github.com/HaziqAjieq">
-          <img src="./public/assets/github.svg"></a></li>
+        <p>
+          I am currently seeking employment, and i would appreciate it if you
+          could contact me with any available job opportunities.
+        </p>
+
+        <ul class="social-container">
+          <li>
+            <a href="https://github.com/HaziqAjieq">
+              <img src="./public/assets/github.svg"
+            /></a>
+          </li>
           <li>
             <a href="https://www.linkedin.com/in/muhammad-haziq-a40b6b1ba/">
-            <img src="./public/assets/linkedin.svg"></a></li>
-      </ul>
+              <img src="./public/assets/linkedin.svg"
+            /></a>
+          </li>
+        </ul>
       </div>
-      
-      <div class="form-container">
 
-      
-       <form action="https://formsubmit.co/muhd.haziq.khair@gmail.com" method="POST" class="contact-form">
-            <div class="form-group">
-                <input type="text" name="name" placeholder="Your Name" required>
-            </div>
-            
-            <div class="form-group input-row">
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="tel" name="phone" placeholder="Phone Number">
-            </div>
-            
-            <div class="form-group">
-                <textarea name="comment" placeholder="Leave a message..." required></textarea>
-            </div>
-            
-            <button type="submit">
-                <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-            
+      <div class="form-container">
+        <form
+          action="https://formsubmit.co/muhd.haziq.khair@gmail.com"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+
+          <div class="form-group input-row">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <input type="tel" name="phone" placeholder="Phone Number" />
+          </div>
+
+          <div class="form-group">
+            <textarea
+              name="comment"
+              placeholder="Leave a message..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
         </form>
-    
-     <!-- social media / github account -->
-      
+
+        <!-- social media / github account -->
       </div>
     </section>
-     <footer>
-        <p>© 2023 Muhammad Haziq | Self-Taught Web Developer</p>
-        <p>Curiosity sparked it. Passion drives it. Code is the future I'm building.</p>
+    <footer>
+      <p>© 2023 Muhammad Haziq | Self-Taught Web Developer</p>
+      <p>
+        Curiosity sparked it. Passion drives it. Code is the future I'm
+        building.
+      </p>
     </footer>
 
-    
     <script src="./public/contexts/cardData.js" type="module"></script>
     <script src="./js/index.js" type="module"></script>
     <script src="./js/navbar.js" type="module"></script>
